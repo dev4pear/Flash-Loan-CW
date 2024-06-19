@@ -1,0 +1,20 @@
+[package]
+name = "cw-simple-loan-receiver"
+version = "0.1.0"
+authors = ["grapestem"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+backtraces = ["cosmwasm-std/backtraces"]
+library = []
+
+[dependencies]
+cosmwasm-std = { workspace = true }
+cosmwasm-storage = { workspace = true }
+cosmwasm-schema = { workspace = true }
+cw-storage-plus = { workspace = true }
+cw20 = { workspace = true }
+thiserror = { workspace = true }
